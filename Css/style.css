@@ -1,57 +1,137 @@
-.barra_navegacion img{
-    width: 50px;
-}
-.titulo_principal{
-    background-color: blue;
-}
-body{
-   background-color: black;
-}
+ /*index.html*/
+*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+transition: 0,5s;}
 
-p{
-    color: white;
-}
+.barra_navegacion img{ 
+width: 40px;
+background-color: yellow;}
+
+.titulo_principal{
+margin-top: 40px;
+background-color: blue;}
+
+
+
+body{
+background-color: black;
+height: 100vh;
+width: 100%;
+position: relative;}
+
+p{color: white;}
 
 .primera_imagen img{
-        width: 500px;}
+margin-top: 20px;
+width: 400px;}
+
+.primera_imagen img{
+    border-radius: 8px;
+    height: auto;
+    box-shadow: 0px 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+
+
+.titulo_secundario{
+    display: flexbox;
+    margin-top: 40px;}
 
 .prueba_dos img{
-    width: 800px;
-}
+    width: 600px;}
+
+
+    
 .gracias_portodo img{
     width: 600px;
-}
+    border-radius: 8px;
+    height: auto;
+    box-shadow: 0px 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+
+
+
 h2{
-   color: white;
-}
+   color: white;}
+
 h3{
-    color: white;
-}
+    color: white;}
+
 h4{
-    color: white;
-    
-}
+    color: white;}
 h5{
-    color: white;
-}
+    color: white;}
+
 h6{
-    color: white;
-}
+    color: white;}
 h7{
-    color: white;
-}
+    color: white;}
+
 .lluvia_imagenes img{
-    width: 600px;
-}
-footer nav img{
-    width: 70px;
-}
+    width: 400px;}
+
+    .conteiner_img img{
+        width: 500px;}
+    
+    .conteiner_img{
+        width: 100%;
+        max-width: 1200px;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 250px;
+        grid-gap:20px
+    }
+    .conteiner_img .box_img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .conteiner_img .box_img img:nth-child(1){
+        grid-row-start: span 2 ;
+    }
+    .conteiner_img .box_img img:nth-child(4){
+        grid-row-start: span 2;
+        
+    }
+    @media screen and (max-width: 500px){
+        .conteiner_img{
+            width: 45%;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 20px;
+            grid-template-rows: 20px;}
+            .container-img .box-img:nth-child(1){
+            grid-column-start: span 1;
+            }
+        }
+        @media screen and (max-width: 800px){
+            .container-img{
+                width: 90%;
+                grid-template-columns: repeat(1,1fr);}
+            .container-img .box-img img{
+                height: 200px;}}
+              
+.span_logo img{
+width: 70px;
+margin-top: 50px;}
 
 
+ 
+ /*contacto.html */
 
 .encabezado_contacto h1{
     background-color: blueviolet;}
-    
+
+.encabezado_video video{
+    width: 45%;
+}
 .redes{
     background-color: rgba(0, 0, 255, 0.308);
     
@@ -79,52 +159,135 @@ footer nav img{
 
 .gracias img{
     width: 500px;
+border-radius: 8px;
+    height: auto;
+    box-shadow: 0px 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+
+ /*establecimiento.html*/
+
+.nuestros h1{
+        background-color:orange;}
+
+*{box-sizing: border-box;}
+
+body{
+    margin: 0%;
+    padding: 0%;
 }
+.colum img{
+    width: 300px;
+}
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.colum{
+    flex: 25%;
+    padding: 5px;
+}
+.colum img{
+    margin-top:5px;
+}
+@media (max-whidth: 800px){
+    .colum{
+        flex: 50%;
+    }
+}
+
+@media (max-whidth: 600px){
+    .colum{
+        flex: 100%;
+    }
+}
+
+/*razas.html*/
 .titulo_razas h1{
     background-color:rebeccapurple;
 }
-.perritos_muchos img{width: 100%;}
+.perritos_muchos img{width: 100%;
+    border-radius: 8px;
+    height: auto;
+    box-shadow: 0px 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+
     
 .imagen_seis img{
-    width: 500px}
-    
-   
-    
-    
+    width: 500px;
+    border-radius: 8px;
+    height: auto;
+    box-shadow: 0px 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
 
 .imagen_siete img{
-    width: 800px;
-    
-        
-    
-    
-}
-.pastor_cachorro img{
-    width: 700px;
-    
-    
-}
-.golden_cachorro img{
+    width: 450px;
+    border-radius: 8px;
+    height: auto;
+    box-shadow: 0px 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+
+ .pastor_cachorro img{
     width: 500px;
+    border-radius: 8px;
+    height: auto;
+    box-shadow: 0px 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+
+.golden_cachorro img{
+    width: 450px;
+    border-radius: 8px;
+    height: auto;
+    box-shadow: 0px 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+
+.columnas img{
+    width: 50%;}
     
-        
+    .columnas{
+        flex: 25%;
+        padding: 5px;
+    }
+    .columnas img{
+        margin-top:5px;
+    }
+    @media (max-whidth: 800px){
+        .columnas{
+            flex: 50%;
+        }
     }
     
+    @media (max-whidth: 600px){
+        .columnas{
+            flex: 100%;
+        }}
 
-
-.nuestros h1{
-    background-color:orange;
-}
+/*alimentos.html*/
+.titulo h1{
+    background-color:rebeccapurple;}
 
 .ultima img{
     width: 400px;
-}
+    border-radius: 8px;
+    height: auto;
+    box-shadow: 0px 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+    
+.card h5 {color: white; }
+
 .marca img{
-    width: 400px;
-}
-.card{
-    background-color: rgb(0, 140, 255);
-}
-.titulo h1{
-    background-color:white;
-}
+    width: 400px;}
+   
+ .card{
+    background-color: rgb(189, 31, 31);
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+
+    
+

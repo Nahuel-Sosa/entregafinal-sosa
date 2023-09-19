@@ -1,10 +1,10 @@
- /*index.html*index.html/
+ /*index.html*/
 *{
 padding: 0;
 margin: 0;
 text-decoration: none;
 list-style: none;
-8box-sizing: border-box;
+box-sizing: border-box;
 font-family: Arial, Helvetica, sans-serif;
 transition: 0,5s;}
 
@@ -124,7 +124,7 @@ margin-top: 50px;}
 
 
  
- /*contacto.html *contacto.html/
+ /*contacto.html */
 
 .encabezado_contacto h1{
     background-color: blueviolet;}
@@ -165,7 +165,7 @@ border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
 
- /*establecimiento.html*establecimiento/
+ /*establecimiento.html*/
 
 .nuestros h1{
         background-color:orange;}
@@ -203,7 +203,7 @@ body{
     }
 }
 
-/*razas.html*razas.html/
+/*razas.html*/
 .titulo_razas h1{
     background-color:rebeccapurple;
 }
@@ -268,7 +268,7 @@ body{
             flex: 100%;
         }}
 
-/*alimentos.html*alimentos.html/
+/*alimentos.html*/
 .titulo h1{
     background-color:rebeccapurple;}
 

@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="shortcut icon" href="../IMG/icono 2.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link rel="stylesheet" href="../scss/style.css">
     <title>Contacto</title>
 </head>
  <body>
   <header>
-    <header>
       <!--Menu de navegacion-->
     <nav>
       <nav class="barra_navegacion">
@@ -54,73 +54,83 @@
   </header>
 
   <main>
-    <!--encabezado y videos-->
     <section>
+      <!--encabezado y videos-->
         <div class="encabezado_contacto"><h1>Contacto</h1></div>
-      <div class="encabezado_video">
+      <div class="encabezado_video" class="rounded img-fluid">
         <video src="../IMG/Cachorro labrador ladrando.mp4" class="object-fit-contain" autoplay></video>
         <video src="../IMG/Cachorros Husky Siberiano.mp4" class="object-fit-cover" autoplay></video></div>
-        <!--imformacion y videos-->
+        
+        <!--imformacion-->
         <div><h2>Bienvenidos</h2></div>
         <div><p>Bienvenido a nuestra guardería de perros! En nuestro hogar temporal, nos aseguramos de que su amado amigo peludo reciba el amor, la atención y el cuidado que merece. Ofrecemos un ambiente seguro y divertido para que su perro socialice, juegue y se divierta mientras usted está fuera. ¡Estamos ansiosos por conocer a su amigo peludo y darle la bienvenida a nuestra familia canina!</p></div>
        <div class="redes"><h3>Redes</h3></div>
         <div><p>¡Gracias por visitar nuestra página de la guardería de perros! Si tienes alguna pregunta o deseas reservar un lugar para tu amigo peludo, no dudes en comunicarte con nosotros. Puedes llamarnos al</p></div>
-        <div class="numero_color">022050309060</div>
+        <div class="numero_color">1126296234<i class="bi bi-whatsapp"></i></div>
         <div><p>o enviarnos un mensaje directo a través de nuestro correo electonico.</p></div>
-        <div class="correo">Guarderia_Lucy_33@hotmail.com</div>
+        <div class="correo">Guarderia_Lucy_33@hotmail.com<i class="bi bi-facebook"></i></div>
         <div><p>Visitenos nuestras redes en integram y facebook</p></div>
-        <div class="integram_face">Guarderia-de-Lucy"</div>
-        <div><p>Estamos ansiosos por escuchar de ti y darle la bienvenida a tu amigo peludo a nuestra familia canina!</p></div>
+        <div class="integram_face">Guarderia-de-Lucy<i class="bi bi-instagram"></i></div>
+        <div><p>Siguenos paras mas historias vieos y fotos</p></div>
+        <div class="twitter">Zona guarderia Lucy<i class="bi bi-twitter"></i></div>
+        <div><p>Siguenos en Twitter para mas novedades</p></div>
+        <div><p>Estamos ansiosos por escuchar de ti y darle la bienvenida a tu futuro amigo de toda la vida, se parte de nuestra familia canina!</p></div>
       </div>
-
-      <div class="gracias_portodo"><img src="../IMG/foto 4.jpg" class="rounded mx-auto d-block" alt="perro agradeciendo"></div>
+    
+      <!--imagen-->
+      <div class="gracias_portodo"><img src="../IMG/foto 4.jpg" class="rounded img-fluid" alt="perro agradeciendo" data-aos="flip-left"></div>
       <div><h4>Puedes registrarte en el siguiente Formulario</h4></div>
-      
-    </section>
-    </main>
-
-  <main>
+    
     <section>    
       <!--Formulario-->
-      <div class="conteiner">
-      <form class="row 3 m-3">
-        <div class="col-6">
-          <label for="emailinput" class="form_label">Email</label>
-          <input type="email" class="form_control" id="emailinput">
-         </div>
-          
-        <div class="col-lg-6">
-          <label for="inputpass" class="form_label">Contraseña</label>
-          <input type="password" class="form_control" id="inputpass" placeholder="contraseña">
+     <div class="formulario_contacto">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Nombre y apellido</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Nombre y Apellido">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Direccion</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Direccion y altura">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Provincia</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Genero</label>
+          <select id="inputState" class="form-select">
+            <option selected>Hombre...</option>
+            <option>Mujer</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Codigo postal</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Acepto terminos y condiciones
+            </label>
           </div>
-          <div class="col-12">
-            <label for="direccioninput" class="form_label">Direccion</label>
-            <input type="text" class="for-control" id="direccioninput" placeholder="direccion">
-       </div>
-       <div class="col-12">
-        <label for="Localidadinput" class="form_label">Localidad</label>
-        <input type="text" class="for-control" id="Localidadinput" placeholder="Localidad">
-   </div>
-   <div class="col-12">
-    <label for="postalinput" class="form_label">Codigo postal</label>
-    <input type="email" class="form_control" id="postalinput" placeholder="codigo postal">
-   </div>
-   <div class="col-12">
-    <label for="añoinput" class="form_label">Fecha de nacimiento</label>
-    <input type="email" class="form_control" id="añoinput" placeholder="fecha de nacimiento">
-   </div>
-   <div class="col-12">
-  <div class="form-check">
-    <input type="checkbox" id="checkterm" class="form-check">
-  <label for="checkterm" class="form-check-label">Acepto todos los terminos</label>
-</div>
-<div class="col-12">
-  <button type="subtim" class="btn btn-primary">Registrate</button>
-</div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
 </section>
-  </main>
   
-<main>
   <section>
     <!--curiosidad-->
     <div><h5>Sabias que?</h5></div>
@@ -133,28 +143,31 @@
     <div class="conteiner_fluid">
       <div class="row p-5 bg-secondary">
       <div class="col-xs-12 col-md-6 col-lg-3">
-        <i class="bi bi-facebook"></i><p class="h3">Guarderia de Lucy</p>
+        <i class="bi bi-facebook">Un Like a la pagina</i><p class="h3">Guarderia de Lucy</p>
     
       </div>
       <div class="col-xs-12 col-md-6 col-lg-3">
-        <i class="bi bi-instagram"></i><p class="h3">Guarderia de Lucy</p>
+        <i class="bi bi-instagram">Siguenos a nuestras Redes</i><p class="h3">Guarderia de Lucy</p>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-3">
-        <i class="bi bi-whatsapp"></i><p class="h3">1126296234</p>
+        <i class="bi bi-whatsapp">Pueden ponerse en contacto con nosotros</i><p class="h3">1126296234</p>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-3">
-        <i class="bi bi-twitter"></i><p class="h3">Zona guarderia Lucy</p></div>
+        <i class="bi bi-twitter">Follow</i><p class="h3">Zona guarderia Lucy</p></div>
     
       <div class="span_logo"><img src="../IMG/logo 1.png" alt="Logo"><p>Los derechos reservados. Queda prohibida la reproducción total o parcial de este contenido sin la autorización expresa del titular de los derechos de autor."
         copyright todos los derechos reservados Guarderia de Lucy 2023@<a href="#top">Inicio</a></p></div>
     </footer>
-    
-   
-</footer>
 
     <!--boostrap JS-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+<!--Animate On Scroll Library-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
 

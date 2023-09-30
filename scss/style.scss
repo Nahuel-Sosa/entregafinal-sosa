@@ -1,46 +1,58 @@
+//variables
+$coloruno:#3339FF;
+$colordos:#FF3933;
+$colortres:#4CFF33;
+$colorcuatro:#D433FF;
+$colorcinco:#000000;
+$colorseis:#FFFFFF;
+$colorsiete:#FFE803;
+$colorocho:#07ECDA;
+
+
 //index.html
-body{
-    background-color: black;}
+body{background-color:$colorcinco}
 
-    *{padding: 0;
-        margin: 0;
-        text-decoration: none;
-        list-style: none;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-        transition: 0,5s;}
-        
+*{padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+ box-sizing: border-box;
+ font-family: Arial, Helvetica, sans-serif;
+ transition: 0,5s;}
 
-p{
-    color: white;
-}
+p{color:$colorseis;
+width:85%;}
+
 img{
-    width: 400px ;
-}
+    width: 400px;}
+
 nav img{
     width: 50px;}
 
 nav{display: grid;
-    
-    grid-template-columns: repeat(auto-fit,minmax)(150px,1fr);
-
-}
+    grid-template-columns: repeat(auto-fit,minmax)(150px,1fr);}
 
 .span_logo img{
-    width: 70px;
-}
+    width: 70px;}
+
+.calesita h5{
+    color:$colorcinco;}
+    
 h1{
-    color: blue;
-}
+    color:$coloruno;}
 h2{
-    color:orange
-}
+    color:$colordos}
 h3{
-    color:red
-}
+    color:$colortres}
 h4{
-    color: violet;
-}
+    color:$colorcuatro}
+
+h5{color:$colorsiete;
+    }
+
+h6{color:$coloruno}
+    
+h7{color: #D433FF;}
 
 .primera_imagen img{
     width: 400px;
@@ -48,70 +60,62 @@ h4{
     height: auto;
     box-shadow: 0px 0px 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr))}
 
-.conteiner_img{
-    width: 100%;
-    max-width: 1200px;
-    margin-bottom: 100px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 250px;
-    grid-gap:20px
+.imagenes_final{
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 100px;
+    margin: auto;
 }
-.conteiner_img .box_img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+.imagenes_final img{
+    border-radius: 15px;
+    box-shadow: opx 3px 5px rgb(15, 15, 15)}  
+   
+footer{
+    width:99%;}
 
-.conteiner_img .box_img img:nth-child(1){
-    grid-row-start: span 2 ;
-}
-.conteiner_img .box_img img:nth-child(4){
-    grid-row-start: span 2;
-    
-}
-@media screen and (max-width: 500px){
-    .conteiner_img{
-        width: 45%;
-        grid-template-columns: repeat(2,1fr);
-        grid-gap: 20px;
-        grid-template-rows: 20px;}
-        .container-img .box-img:nth-child(1){
-        grid-column-start: span 1;
-        }
-    }
-    @media screen and (max-width: 800px){
-        .container-img{
-            width: 90%;
-            grid-template-columns: repeat(1,1fr);}
-        .container-img .box-img img{
-            height: 200px;}}
+    //paginas-responsive!!
+     @media (max-width:800px){
+        footer{
+            width:95%;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 50px;
+           padding: auto;}}
 
-.conteiner_spider{
-    width: 400px;
-    height: 400px;
-    background-color: blue;
-    margin: 40px auto;
-    overflow: hidden;}
+     @media (max-width:500px){
+            footer{
+                width:95%;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 50px;
+               padding: auto;}}
+
+    @media (max-width:360px){
+                footer{
+                    width:95%;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-gap: 50px;
+                   padding: auto;}}
 
 //contacto.html
 video{
-    width: 45%;
-}
+    width: 45%;}
 
-h5{
-    color: violet;
-}
-.numero_color{color: blue;}
+.formulario_contacto{
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    margin-top: 20;
+    background-color:$colorcuatro;}
 
-.correo{
-    color: red;
-}
-.integram_face{
-    color: blue;
-}
+.numero_color{color:$colordos}
+    
+.correo{color:$coloruno;}
+
+.integram_face{color:$colorcuatro}
+
+.twitter{color:$colorocho;}
+
 .gracias_portodo img{
     width: 400px;
     border-radius: 8px;
@@ -120,87 +124,112 @@ h5{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
 
-    .formulario{
-        background-color:blueviolet;
-    }
-    .conteiner{
-        background-color: blueviolet;
-        width: 100%;}
-
 //establecimiento
+.colum{width: 75vw;
+        max-width: 1000px;
+        min-width: 100px;
+        margin: auto;}
 
-*{box-sizing: border-box;}
-
-body{
-    margin: 0%;
-    padding: 0%;
-}
 .colum img{
-    width: 300px;
-}
-.row{
-    display: flex;
-    padding: 5px;
-    flex-wrap: wrap;
-}
-.colum{
-    flex: 25%;
-    padding: 5px;
-}
-.colum img{
-    margin-top:5px;
-}
-@media (max-whidth: 800px){
-    .colum{
-        flex: 50%;
-    }
-}
+        border-radius: 15px;
+        box-shadow: opx 3px 5px rgb(15, 15, 15)}  
 
-@media (max-whidth: 600px){
-    .colum{
-        flex: 100%;
-    }
-}
+        //paginas-responsive!!
+
+        @media (max-width:800px){
+            .columas img{
+                width:80%;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 50px;
+               padding: 0;}}
+       
+        @media (max-width:500px){
+            .columnas img{
+                width:50%;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 50px;
+               padding: 0;}}
+
+            @media (max-width:360px){
+                .column img{
+                    width: 150px;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-gap: 50px;
+                   padding: 0 ;}}
+
+ .bienvenido_gracias p{
+    width: 80%;}
 
 //razas.html 
- .columnas{
-            flex: 25%;
-            padding: 10px;
-        }
-        .columnas img{
-            margin-top:5px;
-        }
-        @media (max-whidth: 800px){
-            .columnas{
-                flex: 50%;
-            }
-        }
+ .columnas{flex: 25;
+            padding: 50px;}
         
-        @media (max-whidth: 600px){
+.columnas img{margin-top:5px;}
+
+ //paginas-responsive!!
+
+    @media (max-whidth: 800px){
             .columnas{
-                flex: 100%;
-            }}
-//alimentos
-.card{
-    background-color: rgb(214, 23, 23);
-}
-.ultima img{
-    width: 400px;
-    border-radius: 8px;
-    height: auto;
-    box-shadow: 0px 0px 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+                flex: 90%;}}
+        
+    @media (max-whidth: 600px){
+            .columnas{
+                flex: 50%;}}
     
-.card h5 {color: white; }
+     @media(max-width:360px){
+           .columas img{
+                        width: 150px;
+                        grid-template-columns: repeat(3,1fr);
+                        grid-gap: 50px;
+                       padding: 0 ;}}
 
-.marca img{
-    width: 400px;}
+//alimentos
+
+.card{ background-color: rgb(189, 31, 31);
+    border-color: black;
+    border-radius: 10px;}
+
+.conteiner{
+    width: 99%;}
+
+    .card h5 {color: white; }
+ 
+.card img{
+    width: 400px;
+     margin: 0;
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));} 
+     
+ 
+.card p{
+    width: 60%;}
    
- .card{
-    background-color: rgb(189, 31, 31);
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+.card h5{width: 60%;}
 
+//paginas-responsive!!
 
+@media (max-width:800px){
+    .conteiner{
+        width:95%;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 50px;
+       padding: 0;}}
+
+@media (max-width:500px){
+    .conteiner{
+        width:95%;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 50px;
+       padding: 0;}}
+
+    @media (max-width:360px){
+        .conteiner{
+            width: 95%;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 50px;
+           padding: 0;}}
+
+ 
+ 
 
 

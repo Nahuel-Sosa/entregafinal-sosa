@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="shortcut icon" href="./IMG/icono 1.png" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
  <link rel="stylesheet" href="./scss/style.css">
   <title>Guarderia Lucy</title>
 </head>
@@ -18,7 +19,7 @@
     <nav class="barra_navegacion">
       <nav class="navbar navbar-expand-lg avbar bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"><img src="./IMG/diamond-dog-mgs-logo-92B35AAE5F-seeklogo.com.png" alt="logo"></a>
+          <a class="navbar-brand" href="./index.html"><img src="./IMG/diamond-dog-mgs-logo-92B35AAE5F-seeklogo.com.png" class="rounded img-fluid" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -51,17 +52,71 @@
       </nav>
     </nav>
 </header>
+  
 <main>
+<section>
+    
+  <!--Carrusel-->
+    <div class="calesita">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./IMG/calesita 4.jpg" class="d-block w-100" alt="perro sorprendido"data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cualquier duda</h5>
+            <p>Hable con nuestros cuidadores estamos las 24 horas a su atencion.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./IMG/calesita 5.jpg" class="d-block w-100" alt="perro intelectual"data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Vacunas,alimento,baños</h5>
+            <p>La mejor atencion para nuestros amigos perrunos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./IMG/calesita 6.jpg" class="d-block w-100" alt="dueño y perro viendo el universo"data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Los perros son nuestro mundo</h5>
+            <p>Cada nuevo perro que entra en mi vida me regala un pedazo de su corazón.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+</section>
+
   <section>
+
     <!--Titulo-->
     <div class="titulo_principal"><h1>Guarderia de Lucy</h1></div>
-       <!--primera imagen-->
-       <div class="primera_imagen"><img src="./IMG/prueba 5.jpg" class="rounded mx-auto d-block" alt="kakahi"></div>
-       <div class="frase_motivadora"><p>La vida es como la música, tiene un principio y un final. Lo importante es el camino que recorremos y las melodías que creamos junto a los demás.</p></div>
-     </section>
-     </main>
+      <!--primera imagen-->
+      <div class="primera_imagen"><div class="text-center">
+        <img src="./IMG/prueba 5.jpg" class="rounded img-fluid" alt="kakahi" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" ></div>
+        <div class="frase_motivadora"><p>La vida es como la música, tiene un principio y un final. Lo importante es el camino que recorremos y las melodías que creamos junto a los demás.</p></div>
+      </section>
+    
 
-<main>
   <section>
      <!--encabezados-->
      <div class="titulo_secundario">
@@ -78,117 +133,72 @@
      es fundamental proporcionarles una alimentación balanceada🍗🥕, asegurarse de que tengan suficiente ejercicio diario🏃‍♀️🏋️‍♂️, y brindarles un espacio cómodo y seguro para descansar🛏️😴. Además, es esencial mantener al día las visitas al veterinario 🏥👩‍⚕️ para garantizar que estén al tanto de las vacunas y tratamientos necesarios. También es importante prestar atención a su higiene, cepillar su pelaje regularmente 🧹🐾 y darles baños cuando sea necesario🛁🚿. En cuanto a la educación, es recomendable enseñarles comandos básicos como "sentado" y "quieto"🐾📚. Esto no solo ayuda a establecer una buena relación entre tú y tu perro, sino que también promoverá su obediencia y seguridad. Por último, pero no menos importante, no olvides brindarles mucho amor y cariño. ¡Los perros son seres leales y siempre estarán ahí para ti! 🥰🐾 Recuerda, cuidar de un perro puede ser una responsabilidad maravillosa y gratificante, ¡así que disfruta cada momento con tu peludo amigo! 🐶💖</p></div>
     
   </section>
-  </main>
-
-<main>
+  
   <section>
     <!--segunda imagen-->
-    <div class="prueba_dos"><div class="text-center">
-      <img src="./IMG/prueba 2.jpg" class="rounded" alt="Perrito con anteojos de sol"></div>
+    <div class="prueba_dos"><div class="text-center"data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
+      <img src="./IMG/prueba 2.jpg" class="rounded img-fluid" alt="Perrito con anteojos de sol"></div>
     
      <!--mas Imformacion-->
-     <div class="contenido_secundario"><h4>Mas imformacion</h4></div>
+     <div class="contenido_secundario"><h4>Bienvenidos a nuestra pagina</h4></div>
 
 
      <div><p>🐶 ¡Bienvenido al mundo de la guarderia de Lucy! 🐾¿Eres un amante de los perros en busca del lugar perfecto para mantener a tu amigo peludo seguro y cómodo mientras estás fuera? ¡No busques más! 🏡🐾 En esta entrada de blog, exploraremos el maravilloso mundo de las perreras, que atienden a dueños de perros de todo tipo. Tanto si eres un profesional ocupado, un viajero de jet-set o simplemente necesitas un poco de tranquilidad durante el día, ¡Criadero de Perro te tiene cubierto! 🌟🐕 Entendemos que dejar a tu querido cachorro al cuidado de otra persona puede ser una decisión difícil. Es por eso que estamos aquí para brindarle toda la información que necesita para tomar la mejor decisión para su compañero de cuatro patas. 🤗🐾 Acompáñanos mientras profundizamos en los diferentes tipos de perreras disponibles, las comodidades que ofrecen y cómo elegir la perfecta para las necesidades de tu cachorro. Ya sea que estés buscando un refugio acogedor para una estancia corta o un hogar a largo plazo lejos de casa, Criadero de Perro está aquí para asegurarte de que tu peludo amigo esté en las mejores manos posibles. 🏠🐾 Entonces, si estás listo para descubrir el mundo de las perreras y encontrar el santuario ideal para tu cachorro, ¡sigue leyendo! Te prometemos que aquí encontrarás todo lo que necesitas saber. 📚🐶 ¡Emprendamos juntos este emocionante viaje! 🌟🐾 si estás listo para descubrir el mundo de las perreras y encontrar el santuario ideal para tu cachorro, ¡sigue leyendo! Te prometemos que aquí encontrarás todo lo que necesitas saber. 📚🐶 ¡Emprendamos juntos este emocionante viaje! 🌟🐾 si estás listo para descubrir el mundo de las perreras y encontrar el santuario ideal para tu cachorro, ¡sigue leyendo! Te prometemos que aquí encontrarás todo lo que necesitas saber. 📚🐶 ¡Emprendamos juntos este emocionante viaje! 🌟🐾</p></div>
-
-     <!--mas imagenes-->
     
-
-    </section>
-   </main>
-
-  <main>
-    <section>
-      <div class="conteiner_img">
-        <div class="box_img">
-            <a href="./index.html">
-            <figure>
-                <img src="./IMG/labrador 4.jpg" alt="labrador en una canasta">
-            </figure>
-          </a></div>
+     <!--Lluvia de imagenes final del index-->
+     <div class="imagenes_final">
+      <img src="./IMG/calesita 1.jpg" class="img-fluid" alt="..." data-aos="fade-up"
+      data-aos-duration="3000">
+      <img src="./IMG/calesita 2.jpg" class="img-fluid" alt="..." data-aos="fade-up"
+      data-aos-duration="3000">
+      <img src="./IMG/labrador 1.jpg" class="img-fluid" alt="..." data-aos="fade-up"
+      data-aos-duration="3000">
+      <img src="./IMG/labrador 3.jpg" class="img-fluid" alt="..." data-aos="fade-up"
+      data-aos-duration="3000">
+      <img src="./IMG/labrador 4.jpg" class="img-fluid" alt="..." data-aos="fade-up"
+      data-aos-duration="3000">
+      <img src="./IMG/labrador 5.jpg" class="img-fluid" alt="..." data-aos="fade-up"
+      data-aos-duration="3000">
+      <img src="./IMG/imagen 6.jpeg" class="img-fluid" alt="..." data-aos="fade-up"
+      data-aos-duration="3000">
+      <img src="./IMG/imagen 7.jpeg" class="img-fluid" alt="..." data-aos="fade-up"
+      data-aos-duration="3000"></div>
     
-          <div class="box_img">
-            <a href="./index.html">
-            <figure>
-                <img src="./IMG/6.jpg" alt="un niño y un perro">
-            </figure>
-          </a></div>
-    
-          <div class="box_img">
-            <a href="./index.html">
-            <figure>
-                <img src="./IMG/5.jpeg" alt="perro con su dueña">
-            </figure>
-          </a></div>
-    
-          <div class="box_img">
-            <a href="./index.html">
-            <figure>
-                <img src="./IMG/labrador 1.jpg" alt="perro en un amanecer">
-            </figure>
-          </a></div>
-    
-          <div class="box_img">
-            <a href="./index.html">
-            <figure>
-                <img src="./IMG/labrador 5.jpg" alt="varios cachorros en una canasta">
-            </figure>
-          </a></div>
-    
-          <div class="box_img">
-            <a href="./index.html">
-            <figure>
-                <img src="./IMG/labrador 3.jpg" alt="cachorro mirando la camara">
-            </figure>
-          </a></div>
-    
-          <div class="box_img">
-            <a href="./index.html">
-            <figure>
-                <img src="./IMG/imagen 3.jpeg" alt="cachorro mirando la camara sorprendido">
-            </figure>
-          </a></div>
-          <div class="box_img">
-            <a href="./index.html">
-            <figure>
-                <img src="./IMG/baño4.jpg" alt="perro dandose un baño">
-            </figure>
-          </a></div>
-
-          <div class="box_img">
-            <a href="./index.html">
-            <figure>
-                <img src="./IMG/imagen 6.jpeg" alt="cachorro corriendo">
-            </figure>
-          </a></div>
-
-    </section>
-     </main>
+ </section>
+    </main>
 
   <footer>
      <!--derechos reservados-->
 <div class="conteiner_fluid">
   <div class="row p-5 bg-secondary">
   <div class="col-xs-12 col-md-6 col-lg-3">
-    <i class="bi bi-facebook"></i><p class="h3">Guarderia de Lucy</p>
+    <i class="bi bi-facebook">Un Like a la pagina</i><p class="h3">Guarderia de Lucy</p>
 
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3">
-    <i class="bi bi-instagram"></i><p class="h3">Guarderia de Lucy</p>
+    <i class="bi bi-instagram">Siguenos a nuestras Redes</i><p class="h3">Guarderia de Lucy</p>
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3">
-    <i class="bi bi-whatsapp"></i><p class="h3">1126296234</p>
+    <i class="bi bi-whatsapp" >Pueden ponerse en contacto con nosotros</i><p class="h3">1126296234</p>
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3">
-    <i class="bi bi-twitter"></i><p class="h3">Zona guarderia Lucy</p></div>
+    <i class="bi bi-twitter">Follow</i><p class="h3">Zona guarderia Lucy</p></div>
 
-  <div class="span_logo"><img src="./IMG/logo 1.png" alt="Logo"><p>Los derechos reservados. Queda prohibida la reproducción total o parcial de este contenido sin la autorización expresa del titular de los derechos de autor."
+  <div class="span_logo"><img src="./IMG/logo 1.png" class="rounded img-fluid" alt="Logo"><p>Los derechos reservados. Queda prohibida la reproducción total o parcial de este contenido sin la autorización expresa del titular de los derechos de autor."
     copyright todos los derechos reservados Guarderia de Lucy 2023@<a href="#top">Inicio</a></p></div>
 </footer>
+
 <!--boostrap JS-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+<!--Animate On Scroll Library-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>

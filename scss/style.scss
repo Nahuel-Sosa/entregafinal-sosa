@@ -1,114 +1,50 @@
-//variables
-$coloruno:#3339FF;
-$colordos:#FF3933;
-$colortres:#4CFF33;
-$colorcuatro:#D433FF;
-$colorcinco:#000000;
-$colorseis:#FFFFFF;
-$colorsiete:#FFE803;
-$colorocho:#07ECDA;
+@import "./partials/variables";
+@import "./partials/reset";
+@import "./partials/bucles";
+@import "./partials/mixin";
+
+@include encabezados();
 
 
 //index.html
-body{background-color:$colorcinco}
-
-*{padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
- box-sizing: border-box;
- font-family: Arial, Helvetica, sans-serif;
- transition: 0,5s;}
-
-p{color:$colorseis;
-width:70%;}
-
-img{
-    width: 400px;}
-
-nav img{
-    width: 50px;}
-
-nav{display: grid;
-    grid-template-columns: repeat(auto-fit,minmax)(150px,1fr);}
-
-.span_logo img{
-    width: 70px;}
 
 .calesita h5{
     color:$colorcinco;}
-    
-h1{
-    color:$coloruno;}
-h2{
-    color:$colordos}
-h3{
-    color:$colortres}
-h4{
-    color:$colorcuatro}
 
-h5{color:$colorsiete;
-    }
-
-h6{color:$coloruno}
-    
-h7{color: #D433FF;}
 
 .primera_imagen img{
-    width: 400px;
+    @include sizes(400px,500px);
     border-radius: 8px;
-    height: auto;
     box-shadow: 0px 0px 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr))}
+    display:$display1;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+
+.prueba_dos img{
+    width: $pixel2;
+}
 
 .imagenes_final{
-    width: 75vw;
-    max-width: 1000px;
-    min-width: 100px;
-    margin: auto;
+    width:$vh;
+    max-width:$max;
+    min-width: $min;
+    margin:auto;
 }
 .imagenes_final img{
-    border-radius: 15px;
+    border-radius:$pixel0;
     box-shadow: opx 3px 5px rgb(15, 15, 15)}  
-   
-footer{
-    width:97%;}
-
-    //paginas-responsive!!
-     @media (max-width:800px){
-        footer{
-            width:95%;
-            grid-template-columns: repeat(3,1fr);
-            grid-gap: 50px;
-           padding: auto;}}
-
-     @media (max-width:500px){
-            footer{
-                width:95%;
-                grid-template-columns: repeat(3,1fr);
-                grid-gap: 50px;
-               padding: auto;}}
-
-    @media (max-width:360px){
-                footer{
-                    width:95%;
-                    grid-template-columns: repeat(3,1fr);
-                    grid-gap: 50px;
-                   padding: auto;}}
 
 //contacto.html
-video{
-    width: 45%;}
+.encabezado_video video{
+    width:$ancho3;}
 
 .formulario_contacto{
     width: 50%;
     margin: 0 auto;
-    display: grid;
+    display:$display1;
     margin-top: 20;
     background-color:$colorcuatro;}
 
-.numero_color{color:$colordos}
+.numero_color{color:$colordos;}
     
 .correo{color:$coloruno;}
 
@@ -117,132 +53,96 @@ video{
 .twitter{color:$colorocho;}
 
 .gracias_portodo img{
-    width: 400px;
+    @include sizes(200px,500px);
     border-radius: 8px;
-    height: auto;
     box-shadow: 0px 0px 30px;
-    display: grid;
+    display:$display1;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
 
 //establecimiento
-.colum{width: 75vw;
-        max-width: 1000px;
-        min-width: 100px;
-        }
+.colum{ width:$vh;
+max-width: $max;
+min-width: $min;}
 
 .colum img{
         border-radius: 15px;
-        box-shadow: opx 3px 5px rgb(15, 15, 15)}  
-
-        //paginas-responsive!!
-
-        @media (max-width:800px){
-            .colum img{
-                width:90%;
-                grid-template-columns: repeat(3,1fr);
-                grid-gap: 50px;
-               padding:auto;}}
-       
-        @media (max-width:500px){
-            .colum img{
-                width:60%;
-                grid-template-columns: repeat(3,1fr);
-                grid-gap: 50px;
-                padding: auto;}}
-
-            @media (max-width:360px){
-                .colum img{
-                    width: 150px;
-                    grid-template-columns: repeat(3,1fr);
-                    grid-gap: 50px;
-                    padding: auto;}}
-
- .bienvenido_gracias p{
-    width: 80%;}
+        box-shadow: opx 3px 5px rgb(15, 15, 15);}
+        
 
 //razas.html 
-.perritos_muchos img{  width: 280px;
+.perritos_muchos img{
+    @include sizes(200px,250px);
     border-radius: 8px;
-    height: auto;
     box-shadow: 0px 0px 30px;
-    display: grid;
+    display: $display1;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr))}
 
-.imagen_seis img{ width: 280px;
+.imagen_seis img{ 
+    @include sizes(200px,250px);
     border-radius: 8px;
-    height: auto;
     box-shadow: 0px 0px 30px;
-    display: grid;
+    display: $display1;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr))}
 
-.imagen_siete img{width: 280px;
+.imagen_siete img{
+    @include sizes(200px,250px);
     border-radius: 8px;
-    height: auto;
     box-shadow: 0px 0px 30px;
-    display: grid;
+    display: $display1;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr))}
 
-.pastor_cachorro{width: 280px;
-    border-radius: 8px;
+.pastor_cachorro{
+    width:$pixel4;
     height: auto;
+    border-radius: 8px;
     box-shadow: 0px 0px 30px;
-    display: grid;
+    display:$display1;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr))}
 
-.golden_cachorro{width: 280px;
+.golden_cachorro{
+    @include sizes(200px,250px);
     border-radius: 8px;
-    height: auto;
     box-shadow: 0px 0px 30px;
-    display: grid;
+    display:$display1;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr))}
+
+.muy_pronto video{
+    width: $ancho2;}
 
 //alimentos
 
-.card{ background-color: rgb(189, 31, 31);
-    border-color: black;
-    border-radius: 10px;}
+.card{ background-color:$colordos;
+    border-color:$colorcinco;
+    border-radius: 10px;
+    font-size:$font;}
 
 .conteiner{
-    width: 95%;}
+    @include sizes(98%,98%)
+    }
 
-    .card h5 {color: white; }
+.card h5 {color:$colorseis; }
  
 .card img{
-    width: 400px;
+    width:$pixel2;
      margin: 0;
-     display: grid;
+     display:$display1;
      grid-template-columns: repeat(auto-fit,minmax(150px,1fr));} 
      
  
 .card p{
-    width: 60%;}
+    width:$ancho1;
+font-size: $font;}
    
-.card h5{width: 60%;}
+.card h5{width:$ancho2;
+font-size:$font*2}
 
-//paginas-responsive!!
+//*@extend*
 
-@media (max-width:800px){
-    .conteiner{
-        width:95%;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap: 50px;
-       padding: 0;}}
-
-@media (max-width:500px){
-    .conteiner{
-        width:90%;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap: 50px;
-       padding: 0;}}
-
-    @media (max-width:360px){
-        .conteiner{
-            width: 85%;
-            grid-template-columns: repeat(3,1fr);
-            grid-gap: 50px;
-           padding: 0;}}
-
+.btn--big{
+    @extend .btn;
+    width: $ancho1;
+}
  
  
-
+@import "./partials/queries";
 

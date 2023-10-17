@@ -1,0 +1,20 @@
+@mixin encabezados() {
+h1{font-size: 2.0rem;}
+
+h2{
+    font-size: 1,9rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h4{
+    font-size: 1.6rem;
+}
+}
+
+//modificar minix de encabezados y pasrles valor
+
+@mixin sizes($alto,$ancho){
+    width: $ancho;
+    height: $alto;
+}

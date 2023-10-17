@@ -1,7 +1,3 @@
-body {
-  background-color: #000000;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -12,17 +8,16 @@ body {
   transition: 0, 5s;
 }
 
-p {
-  color: #FFFFFF;
-  width: 70%;
+body {
+  background-color: #000000;
 }
 
-img {
-  width: 400px;
+p {
+  color: #FFFFFF;
 }
 
 nav img {
-  width: 50px;
+  width: 70px;
 }
 
 nav {
@@ -32,10 +27,6 @@ nav {
 
 .span_logo img {
   width: 70px;
-}
-
-.calesita h5 {
-  color: #000000;
 }
 
 h1 {
@@ -51,7 +42,7 @@ h3 {
 }
 
 h4 {
-  color: #D433FF;
+  color: #3339FF;
 }
 
 h5 {
@@ -66,19 +57,104 @@ h7 {
   color: #D433FF;
 }
 
+footer {
+  width: 98%;
+  color: blue;
+}
+
+.card-title-1 {
+  font-size: 1rem;
+}
+
+.card-title-2 {
+  font-size: 2rem;
+}
+
+.card-title-3 {
+  font-size: 3rem;
+}
+
+.card-title-4 {
+  font-size: 4rem;
+}
+
+.card-title-5 {
+  font-size: 5rem;
+}
+
+.card-title-6 {
+  font-size: 6rem;
+}
+
+.color--black {
+  color: black;
+}
+
+.color--green {
+  color: green;
+}
+
+.color--blue {
+  color: blue;
+}
+
+.color--red {
+  color: red;
+}
+
+.btn.btn-naranja, .btn-naranja.btn--big {
+  background-color: rgba(230, 108, 9, 0.5490196078);
+}
+
+.btn.btn-gris, .btn-gris.btn--big {
+  background-color: #ccc;
+}
+
+.btn.btn-azul, .btn-azul.btn--big {
+  background-color: #0861d4;
+}
+
+.btn.btn-negro, .btn-negro.btn--big {
+  background-color: #000000;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1, 9rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+.calesita h5 {
+  color: #000000;
+}
+
 .primera_imagen img {
-  width: 400px;
+  width: 500px;
+  height: 400px;
   border-radius: 8px;
-  height: auto;
   box-shadow: 0px 0px 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
+.prueba_dos img {
+  width: 500px;
+}
+
 .imagenes_final {
   width: 75vw;
-  max-width: 1000px;
-  min-width: 100px;
+  max-width: 800px;
+  min-width: 270px;
   margin: auto;
 }
 
@@ -87,36 +163,8 @@ h7 {
   box-shadow: opx 3px 5px rgb(15, 15, 15);
 }
 
-footer {
-  width: 97%;
-}
-
-@media (max-width: 800px) {
-  footer {
-    width: 95%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: auto;
-  }
-}
-@media (max-width: 500px) {
-  footer {
-    width: 95%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: auto;
-  }
-}
-@media (max-width: 360px) {
-  footer {
-    width: 95%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: auto;
-  }
-}
-video {
-  width: 45%;
+.encabezado_video video {
+  width: 49%;
 }
 
 .formulario_contacto {
@@ -144,9 +192,9 @@ video {
 }
 
 .gracias_portodo img {
-  width: 400px;
+  width: 500px;
+  height: 200px;
   border-radius: 8px;
-  height: auto;
   box-shadow: 0px 0px 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -154,8 +202,8 @@ video {
 
 .colum {
   width: 75vw;
-  max-width: 1000px;
-  min-width: 100px;
+  max-width: 800px;
+  min-width: 270px;
 }
 
 .colum img {
@@ -163,6 +211,116 @@ video {
   box-shadow: opx 3px 5px rgb(15, 15, 15);
 }
 
+.perritos_muchos img {
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.imagen_seis img {
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.imagen_siete img {
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.pastor_cachorro {
+  width: 270px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.golden_cachorro {
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.muy_pronto video {
+  width: 98%;
+}
+
+.card {
+  background-color: #FF3933;
+  border-color: #000000;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.conteiner {
+  width: 98%;
+  height: 98%;
+}
+
+.card h5 {
+  color: #FFFFFF;
+}
+
+.card img {
+  width: 500px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.card p {
+  width: 80%;
+  font-size: 1rem;
+}
+
+.card h5 {
+  width: 98%;
+  font-size: 2rem;
+}
+
+.btn--big {
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+  footer {
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: auto;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: auto;
+  }
+}
+@media (max-width: 360px) {
+  footer {
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: auto;
+  }
+}
 @media (max-width: 800px) {
   .colum img {
     width: 90%;
@@ -173,7 +331,7 @@ video {
 }
 @media (max-width: 500px) {
   .colum img {
-    width: 60%;
+    width: 80%;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: auto;
@@ -187,84 +345,6 @@ video {
     padding: auto;
   }
 }
-.bienvenido_gracias p {
-  width: 80%;
-}
-
-.perritos_muchos img {
-  width: 280px;
-  border-radius: 8px;
-  height: auto;
-  box-shadow: 0px 0px 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.imagen_seis img {
-  width: 280px;
-  border-radius: 8px;
-  height: auto;
-  box-shadow: 0px 0px 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.imagen_siete img {
-  width: 280px;
-  border-radius: 8px;
-  height: auto;
-  box-shadow: 0px 0px 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.pastor_cachorro {
-  width: 280px;
-  border-radius: 8px;
-  height: auto;
-  box-shadow: 0px 0px 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.golden_cachorro {
-  width: 280px;
-  border-radius: 8px;
-  height: auto;
-  box-shadow: 0px 0px 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.card {
-  background-color: rgb(189, 31, 31);
-  border-color: black;
-  border-radius: 10px;
-}
-
-.conteiner {
-  width: 95%;
-}
-
-.card h5 {
-  color: white;
-}
-
-.card img {
-  width: 400px;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.card p {
-  width: 60%;
-}
-
-.card h5 {
-  width: 60%;
-}
-
 @media (max-width: 800px) {
   .conteiner {
     width: 95%;
@@ -283,7 +363,7 @@ video {
 }
 @media (max-width: 360px) {
   .conteiner {
-    width: 85%;
+    width: 95%;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 0;

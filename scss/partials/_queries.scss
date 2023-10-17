@@ -1,0 +1,69 @@
+    //paginas-responsive index!!
+    @media (max-width:800px){
+        footer{
+            width:95%;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 50px;
+           padding: auto;}}
+
+     @media (max-width:500px){
+            footer{
+                width:95%;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 50px;
+               padding: auto;}}
+
+    @media (max-width:360px){
+                footer{
+                    width:95%;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-gap: 50px;
+                   padding: auto;}}
+
+   //paginas-responsive establecimiento!!
+
+   @media (max-width:800px){
+    .colum img{
+        width:90%;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 50px;
+       padding:auto;}}
+
+@media (max-width:500px){
+    .colum img{
+        width:80%;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 50px;
+        padding: auto;}}
+
+    @media (max-width:360px){
+        .colum img{
+            width: 150px;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 50px;
+            padding: auto;}}
+
+
+//paginas-responsive alimentos!!
+
+@media (max-width:800px){
+    .conteiner{
+        width:95%;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 50px;
+       padding: 0;}}
+
+@media (max-width:500px){
+    .conteiner{
+        width:90%;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 50px;
+       padding: 0;}}
+
+    @media (max-width:360px){
+        .conteiner{
+            width: 95%;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 50px;
+           padding: 0;}}
+

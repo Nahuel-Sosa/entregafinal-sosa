@@ -1,0 +1,26 @@
+//for
+@for $i from 1 through  6{
+    .card-title-#{$i}{
+        font-size: 1rem*$i; 
+    }
+}
+
+//each
+
+@each $color in black,green,blue,red{
+    .color--#{$color}{
+        color:#{$color};
+    }}
+
+//maps
+$btn-colors:(
+    naranja:#e66c098c,
+    gris:#ccc,
+    azul:#0861d4,
+    negro:#000000);
+
+@each $btn-color,$color in $btn-colors{
+    .btn.btn-#{$btn-color}{
+        background-color: #{$color};
+    }
+}

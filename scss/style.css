@@ -14,7 +14,7 @@ body {
 
 p {
   color: #FFFFFF;
-  width: 85%;
+  width: 70%;
 }
 
 img {
@@ -88,7 +88,7 @@ h7 {
 }
 
 footer {
-  width: 99%;
+  width: 97%;
 }
 
 @media (max-width: 800px) {
@@ -156,7 +156,6 @@ video {
   width: 75vw;
   max-width: 1000px;
   min-width: 100px;
-  margin: auto;
 }
 
 .colum img {
@@ -165,60 +164,78 @@ video {
 }
 
 @media (max-width: 800px) {
-  .columas img {
-    width: 80%;
+  .colum img {
+    width: 90%;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 0;
+    padding: auto;
   }
 }
 @media (max-width: 500px) {
-  .columnas img {
-    width: 50%;
+  .colum img {
+    width: 60%;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 0;
+    padding: auto;
   }
 }
 @media (max-width: 360px) {
-  .column img {
+  .colum img {
     width: 150px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 0;
+    padding: auto;
   }
 }
 .bienvenido_gracias p {
   width: 80%;
 }
 
-.columnas {
-  flex: 25;
-  padding: 50px;
+.perritos_muchos img {
+  width: 280px;
+  border-radius: 8px;
+  height: auto;
+  box-shadow: 0px 0px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-.columnas img {
-  margin-top: 5px;
+.imagen_seis img {
+  width: 280px;
+  border-radius: 8px;
+  height: auto;
+  box-shadow: 0px 0px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-@media (max-whidth: 800px) {
-  .columnas {
-    flex: 90%;
-  }
+.imagen_siete img {
+  width: 280px;
+  border-radius: 8px;
+  height: auto;
+  box-shadow: 0px 0px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
-@media (max-whidth: 600px) {
-  .columnas {
-    flex: 50%;
-  }
+
+.pastor_cachorro {
+  width: 280px;
+  border-radius: 8px;
+  height: auto;
+  box-shadow: 0px 0px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
-@media (max-width: 360px) {
-  .columas img {
-    width: 150px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 0;
-  }
+
+.golden_cachorro {
+  width: 280px;
+  border-radius: 8px;
+  height: auto;
+  box-shadow: 0px 0px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+
 .card {
   background-color: rgb(189, 31, 31);
   border-color: black;
@@ -226,7 +243,7 @@ video {
 }
 
 .conteiner {
-  width: 99%;
+  width: 95%;
 }
 
 .card h5 {
@@ -258,7 +275,7 @@ video {
 }
 @media (max-width: 500px) {
   .conteiner {
-    width: 95%;
+    width: 90%;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 0;
@@ -266,7 +283,7 @@ video {
 }
 @media (max-width: 360px) {
   .conteiner {
-    width: 95%;
+    width: 85%;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 0;
